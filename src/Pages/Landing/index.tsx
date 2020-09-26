@@ -10,6 +10,7 @@ import ArrowIcon from '../../assets/arrowUp.svg';
 
 // import '../../components/css/Button.css';
 import './styles.css';
+import '../../Components/Button/styles.css';
 // import '../../global.css';
 
 function Landing() {
