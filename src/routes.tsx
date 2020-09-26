@@ -8,11 +8,13 @@ import NotFound from './Pages/404';
 function Routes() {
     return (
         <BrowserRouter>
-            <Route path="/" exact component={Landing} />
-            <Route path="/getcountries" exact component={GetCountries} />
-            <Route path="*" exact component={NotFound} />
+            <Switch>
+                <Route path="/" exact component={Landing} />
+                <Route path="/getcountries" exact component={GetCountries} />
+                <Route path="*" exact component={NotFound} />
+            </Switch>
         </BrowserRouter>
-    )
+    );
 }
 
 export default Routes;
