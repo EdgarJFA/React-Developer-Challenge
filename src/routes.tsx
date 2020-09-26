@@ -10,7 +10,7 @@ function Routes() {
         <BrowserRouter>
             <Switch>
                 <Route path="/" exact component={Landing} />
-                <Route path="/getcountries" exact component={GetCountries} />
+                <Route path="/listofcountries" exact component={GetCountries} />
                 <Route path="*" exact component={NotFound} />
             </Switch>
         </BrowserRouter>
