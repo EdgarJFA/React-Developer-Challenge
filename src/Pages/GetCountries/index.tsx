@@ -1,9 +1,9 @@
 import React, { useState, useEffect } from 'react';
-import { Link } from 'react-router-dom';
 import { WaveLoading  } from 'react-loadingg';
 import ReactToExcel from 'react-html-table-to-excel';
 import { CSVLink } from "react-csv";
 
+import PageHeader from '../../Components/PageHeader';
 import api from '../../services/api';
 import './styles.css';
 
@@ -60,13 +60,7 @@ function GetCountries() {
     return (
         <div id="GetCountries">
             <div className="content" >
-                <header>
-                    <Link to="/" rel="noopener noreferrer">Home</Link>
-                    <Link to={{ pathname: "https://github.com/apilayer/restcountries" }} target="_blank" rel="noopener noreferrer">View on Github</Link>
-                    <Link to={{ pathname: "https://restcountries.eu/#rest-countries" }} target="_blank" rel="noopener noreferrer">Docs API</Link>
-                    <Link to="/listofcountries"rel="noopener noreferrer">Get Countries</Link>
-                    {/* <a href="http://" target="_blank" rel="noopener noreferrer">Contact US</a> */}
-                </header>
+                <PageHeader home="/" countrieList="/listofcountries" />
                 <main>
                     <div className="sub-content">
                         <h2>Discovery the world</h2>
